@@ -56,6 +56,20 @@
         <image id="the-destruction" src="images/index.jpeg"></image> <br />
         <button onclick="notTheDeathStar()">DON'T DO IT</button>
     </div>
+    <div id="tim-ex">
+
+        <h2>Timothy Bowling</h2>
+        <p id="timsPtag">Hello World!</p>
+        <button id="timsBtn">Click</button>
+        <h1 id="timshTagOne">hi</h1>
+        <h1 id="timsHTagTwo">
+            Frogs are my favorite animal. I love chicken nuggetts from
+            McDounlds. I hate their chicken tenders. I am Charlie Perkins.
+            <p>BIG MAC ATTACK!</p>
+        </h1>
+    </div>
+
+
 </body>
 
 <script>
@@ -79,7 +93,20 @@
         pic.src = "images/index1.jpeg";
     }
 
+    function timsFunction() {
+        var btn = document.querySelector("#timsBtn");
+        var p = document.querySelector("#timsPtag");
+        var text = document.querySelector("#timshTagOne");
+        var textTwo = document.querySelector("#timsHTagTwo")
+        btn.addEventListener("click", () => {
+            p.style.color = "red";
+            text.style.color = "green";
+            textTwo.style.color = "green"
+            p.style.fontSize = "3rem";
+        });
+    }
     wordsScreen();
+    timsFunction()
 </script>
 
 </html>
