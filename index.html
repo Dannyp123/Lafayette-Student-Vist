@@ -1,175 +1,203 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Document</title>
+        <link
+            rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+            integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+            crossorigin="anonymous"
+        />
+    </head>
 
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Document</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
-        crossorigin="anonymous" />
-</head>
+    <style>
+        #danny-ex {
+            background-color: orange;
+        }
 
-<style>
-    #danny-ex {
-        background-color: orange;
-    }
+        .btn {
+            border: 4px solid blue;
+            background-color: red;
+            width: 121px;
+            height: 100px;
+        }
 
-    .btn {
-        border: 4px solid blue;
-        background-color: red;
-        width: 121px;
-        height: 100px;
-    }
+        .food {
+            color: red;
+            background: navy;
+        }
 
-    .food {
-        color: red;
-        background: navy;
-    }
+        .btnTwo {
+            border: 4px solid blue;
+            background-color: green;
+            width: 121px;
+            height: 100px;
+        }
+        .message {
+            background-color: red;
+            display: flex;
+            justify-content: center;
+        }
+    </style>
 
-    .btnTwo {
-        border: 4px solid blue;
-        background-color: green;
-        width: 121px;
-        height: 100px;
-    }
-</style>
-
-<body>
-    <div id="danny-ex">
-        <h2>Danny Peterson</h2>
-        <h1 id="topHeader" class="header"></h1>
-        <h1 id="topHeaderTwo" class="header"></h1>
-        <button class="btn" id="clickBtn">
-            <span class="word">Explode</span>
-        </button>
-        <button class="btnTwo" id="resolve">
-            <span class="word">Resolve</span>
-        </button>
-    </div>
-    <div id="cody-ex">
-        <h2>Cody van der Poel</h2>
-        <p>Hello World</p>
-        <p>See</p>
-        <p>This is what I was talking about</p>
-        <image id="the-destruction" src="images/index.jpeg"></image> <br />
-        <button onclick="notTheDeathStar()">DON'T DO IT</button>
-    </div>
-    <div id="ray-ex">
-        <h2>Ray Turner</h2>
-        <h1>FAVORITE FOOD'S!!!!!!!!!!</h1>
-        <div class="food">
-            <h4>nutella</h4>
-            <h4>chicken</h4>
-            <h4>steak</h4>
-            <h4>pizza</h4>
-            <h4>ice cream</h4>
-            <h4>ribs</h4>
+    <body>
+        <div id="danny-ex">
+            <h2>Danny Peterson</h2>
+            <h1 id="topHeader" class="header"></h1>
+            <h1 id="topHeaderTwo" class="header"></h1>
+            <button class="btn" id="clickBtn">
+                <span class="word">Explode</span>
+            </button>
+            <button class="btnTwo" id="resolve">
+                <span class="word">Resolve</span>
+            </button>
         </div>
-    </div>
-    <div id="tim-ex">
-        <h2>Timothy Bowling</h2>
-        <p id="timsPtag">Hello World!</p>
-        <button id="timsBtn">Click</button>
-        <h1 id="timshTagOne">hi</h1>
-        <h1 id="timsHTagTwo">
-            Frogs are my favorite animal. I love chicken nuggetts from
-            McDounlds. I hate their chicken tenders. I am Charlie Perkins.
-            <p>BIG MAC ATTACK!</p>
-        </h1>
-    </div>
-    <div id="logan-ex">
-        <h2>Logan Harrel</h2>
-        <button class="random-button">Press Here!</button>
-    </div>
-    <div id="myeisha-ex">
-        <h2> Myeisha Madkins </h2>
-        <ul class="">
-            <li> first </li>
-            <li> next </li>
-            <li> last
-            </li>
-        </ul> <br />
-        <p>
-            <b> Tennis </b> is fun.</p>
-        <h2> Soccer </h2>
-    </div>
-    <div id="cole-ex">
-        <h2>Cole Anderson</h2>
-        <h1>Hello World</h1>
-        <button class="button">Exploding Button</button>
-    </div>
-</body>
-<script>
-    function wordsScreen() {
-        var button = document.querySelector("#clickBtn");
-        var buttonTwo = document.querySelector("#resolve");
-        var header = document.querySelector("#topHeader");
-        var headerTwo = document.querySelector("#topHeaderTwo");
-        button.addEventListener("click", function () {
-            header.innerText = "Goodbye World";
-            headerTwo.innerText = "";
+        <div id="cody-ex">
+            <h2>Cody van der Poel</h2>
+            <p>Hello World</p>
+            <p>See</p>
+            <p>This is what I was talking about</p>
+            <image id="the-destruction" src="images/index.jpeg"></image> <br />
+            <button onclick="notTheDeathStar()">DON'T DO IT</button>
+        </div>
+        <div id="ray-ex">
+            <h2>Ray Turner</h2>
+            <h1>FAVORITE FOOD'S!!!!!!!!!!</h1>
+            <div class="food">
+                <h4>nutella</h4>
+                <h4>chicken</h4>
+                <h4>steak</h4>
+                <h4>pizza</h4>
+                <h4>ice cream</h4>
+                <h4>ribs</h4>
+            </div>
+        </div>
+        <div id="tim-ex">
+            <h2>Timothy Bowling</h2>
+            <p id="timsPtag">Hello World!</p>
+            <button id="timsBtn">Click</button>
+            <h1 id="timshTagOne">hi</h1>
+            <h1 id="timsHTagTwo">
+                Frogs are my favorite animal. I love chicken nuggetts from
+                McDounlds. I hate their chicken tenders. I am Charlie Perkins.
+                <p>BIG MAC ATTACK!</p>
+            </h1>
+        </div>
+        <div id="logan-ex">
+            <h2>Logan Harrel</h2>
+            <button class="random-button">Press Here!</button>
+        </div>
+        <div id="myeisha-ex">
+            <h2>Myeisha Madkins</h2>
+            <ul class="">
+                <li>first</li>
+                <li>next</li>
+                <li>last</li>
+            </ul>
+            <br />
+            <p><b> Tennis </b> is fun.</p>
+            <h2>Soccer</h2>
+        </div>
+        <div id="cole-ex">
+            <h2>Cole Anderson</h2>
+            <h1>Hello World</h1>
+            <button class="button">Exploding Button</button>
+        </div>
+        <div id="ginger-ex">
+            <h1 class="message">Hello World</h1>
+            <!--
+                <img src="https://as-images.apple.com/is/image/AppleInc/aos/published/images/o/g/og/default/og-default?wid=1200&hei=630&fmt=jpeg&qlt=95&op_usm=0.5,0.5&.v=1525370171638">
+            -->
+            <button id="button" type="button">Click Me!</button>
+            <p>hi</p>
+        </div>
+    </body>
+    <script>
+        function wordsScreen() {
+            var button = document.querySelector("#clickBtn");
+            var buttonTwo = document.querySelector("#resolve");
+            var header = document.querySelector("#topHeader");
+            var headerTwo = document.querySelector("#topHeaderTwo");
+            button.addEventListener("click", function() {
+                header.innerText = "Goodbye World";
+                headerTwo.innerText = "";
+            });
+            buttonTwo.addEventListener("click", function() {
+                headerTwo.innerText = "Hello World";
+                header.innerText = "";
+            });
+        }
+
+        function notTheDeathStar() {
+            var pic = document.getElementById("the-destruction");
+            pic.src = "images/index1.jpeg";
+        }
+        var colors = ["green", "red", "black", "brown", "orange"];
+
+        function getColor(colors) {
+            var randomColor = colors[Math.floor(Math.random() * colors.length)];
+            return randomColor;
+        }
+        var button = document.querySelector("button.random-button");
+        var page = document.querySelector("body");
+        button.addEventListener(
+            "click",
+            () => (page.style.backgroundColor = getColor(colors))
+            // window.open("https://www.google.com")
+        );
+
+        function exploding_button() {
+            var button = document.querySelector(".button");
+            button.addEventListener("click", blow_up);
+        }
+
+        exploding_button();
+
+        function blow_up() {
+            document.querySelector("body").style.backgroundColor = "red";
+        }
+        wordsScreen();
+        timsFunction();
+        getColor(colors);
+        exploding_button();
+
+        function timsFunction() {
+            var btn = document.querySelector("#timsBtn");
+            var p = document.querySelector("#timsPtag");
+            var text = document.querySelector("#timshTagOne");
+            var textTwo = document.querySelector("#timsHTagTwo");
+            btn.addEventListener("click", () => {
+                p.style.color = "red";
+                text.style.color = "green";
+                textTwo.style.color = "green";
+                p.style.fontSize = "3rem";
+            });
+        }
+        wordsScreen();
+        timsFunction();
+    </script>
+    <script
+        src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"
+    ></script>
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"
+    ></script>
+    <script
+        src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"
+    ></script>
+    <script>
+        var button = document.getElementById("button");
+        button.addEventListener("click", function() {
+            alert("you clicked me! yay!");
         });
-        buttonTwo.addEventListener("click", function () {
-            headerTwo.innerText = "Hello World";
-            header.innerText = "";
-        });
-    }
-
-    function notTheDeathStar() {
-        var pic = document.getElementById("the-destruction");
-        pic.src = "images/index1.jpeg";
-    }
-    var colors = ["green", "red", "black", "brown", "orange"];
-
-    function getColor(colors) {
-        var randomColor =
-            colors[Math.floor(Math.random() * colors.length)];
-        return randomColor;
-    }
-    var button = document.querySelector("button.random-button");
-    var page = document.querySelector("body");
-    button.addEventListener(
-        "click",
-        () => (page.style.backgroundColor = getColor(colors))
-        // window.open("https://www.google.com")
-    );
-
-    function exploding_button() {
-        var button = document.querySelector(".button");
-        button.addEventListener("click", blow_up);
-    }
-
-    exploding_button();
-
-    function blow_up() {
-        document.querySelector("body").style.backgroundColor = "red";
-    }
-    wordsScreen();
-    timsFunction();
-    getColor(colors)
-    exploding_button()
-
-    function timsFunction() {
-        var btn = document.querySelector("#timsBtn");
-        var p = document.querySelector("#timsPtag");
-        var text = document.querySelector("#timshTagOne");
-        var textTwo = document.querySelector("#timsHTagTwo");
-        btn.addEventListener("click", () => {
-            p.style.color = "red";
-            text.style.color = "green";
-            textTwo.style.color = "green";
-            p.style.fontSize = "3rem";
-        });
-    }
-    wordsScreen();
-    timsFunction();
-</script>
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-    crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-    crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-    crossorigin="anonymous"></script>
-
+    </script>
 </html>
