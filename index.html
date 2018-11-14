@@ -6,6 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous" />
+</head>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
 </head>
 
 <style>
@@ -18,6 +27,11 @@
         background-color: red;
         width: 121px;
         height: 100px;
+    }
+
+    .food {
+        color: red;
+        background: navy;
     }
 
     .btnTwo {
@@ -75,6 +89,18 @@
         <h2>Logan Harrel</h2>
         <button class="random-button">Press Here!</button>
     </div>
+    <div id="myeisha-ex">
+        <h2> Myeisha Madkins </h2>
+        <ul class="">
+            <li> first </li>
+            <li> next </li>
+            <li> last
+            </li>
+        </ul> <br />
+        <p>
+            <b> Tennis </b> is fun.</p>
+        <h2> Soccer </h2>
+    </div>
 </body>
 <script>
     function wordsScreen() {
@@ -96,20 +122,6 @@
         var pic = document.getElementById("the-destruction");
         pic.src = "images/index1.jpeg";
     }
-
-
-    function timsFunction() {
-        var btn = document.querySelector("#timsBtn");
-        var p = document.querySelector("#timsPtag");
-        var text = document.querySelector("#timshTagOne");
-        var textTwo = document.querySelector("#timsHTagTwo");
-        btn.addEventListener("click", () => {
-            p.style.color = "red";
-            text.style.color = "green";
-            textTwo.style.color = "green";
-            p.style.fontSize = "3rem";
-        });
-    }
     var colors = ["green", "red", "black", "brown", "orange"];
 
     function getColor(colors) {
@@ -127,6 +139,27 @@
     wordsScreen();
     timsFunction();
     getColor(colors)
+
+    function timsFunction() {
+        var btn = document.querySelector("#timsBtn");
+        var p = document.querySelector("#timsPtag");
+        var text = document.querySelector("#timshTagOne");
+        var textTwo = document.querySelector("#timsHTagTwo");
+        btn.addEventListener("click", () => {
+            p.style.color = "red";
+            text.style.color = "green";
+            textTwo.style.color = "green";
+            p.style.fontSize = "3rem";
+        });
+    }
+    wordsScreen();
+    timsFunction();
 </script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
 
 </html>
