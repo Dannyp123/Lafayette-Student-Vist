@@ -10,15 +10,8 @@
         crossorigin="anonymous" />
 </head>
 
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Document</title>
-</head>
-
 <style>
-    body {
+    #danny-ex {
         background-color: orange;
     }
 
@@ -101,6 +94,11 @@
             <b> Tennis </b> is fun.</p>
         <h2> Soccer </h2>
     </div>
+    <div id="cole-ex">
+        <h2>Cole Anderson</h2>
+        <h1>Hello World</h1>
+        <button class="button">Exploding Button</button>
+    </div>
 </body>
 <script>
     function wordsScreen() {
@@ -136,9 +134,21 @@
         () => (page.style.backgroundColor = getColor(colors))
         // window.open("https://www.google.com")
     );
+
+    function exploding_button() {
+        var button = document.querySelector(".button");
+        button.addEventListener("click", blow_up);
+    }
+
+    exploding_button();
+
+    function blow_up() {
+        document.querySelector("body").style.backgroundColor = "red";
+    }
     wordsScreen();
     timsFunction();
     getColor(colors)
+    exploding_button()
 
     function timsFunction() {
         var btn = document.querySelector("#timsBtn");
