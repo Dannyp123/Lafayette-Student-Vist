@@ -71,45 +71,18 @@
                 <h4>ribs</h4>
             </div>
         </div>
+        <div id="tim-ex">
+            <h2>Timothy Bowling</h2>
+            <p id="timsPtag">Hello World!</p>
+            <button id="timsBtn">Click</button>
+            <h1 id="timshTagOne">hi</h1>
+            <h1 id="timsHTagTwo">
+                Frogs are my favorite animal. I love chicken nuggetts from
+                McDounlds. I hate their chicken tenders. I am Charlie Perkins.
+                <p>BIG MAC ATTACK!</p>
+            </h1>
+        </div>
     </body>
-
-<<<<<<< HEAD
-<body>
-    <div id="danny-ex">
-        <h2>Danny Peterson</h2>
-        <h1 id="topHeader" class="header"></h1>
-        <h1 id="topHeaderTwo" class="header"></h1>
-        <button class="btn" id="clickBtn">
-            <span class="word">Explode</span>
-        </button>
-        <button class="btnTwo" id="resolve">
-            <span class="word">Resolve</span>
-        </button>
-    </div>
-    <div id="cody-ex">
-        <h2>Cody van der Poel</h2>
-        <p>Hello World</p>
-        <p>See</p>
-        <p>This is what I was talking about</p>
-        <image id="the-destruction" src="images/index.jpeg"></image> <br />
-        <button onclick="notTheDeathStar()">DON'T DO IT</button>
-    </div>
-    <div id="tim-ex">
-
-        <h2>Timothy Bowling</h2>
-        <p id="timsPtag">Hello World!</p>
-        <button id="timsBtn">Click</button>
-        <h1 id="timshTagOne">hi</h1>
-        <h1 id="timsHTagTwo">
-            Frogs are my favorite animal. I love chicken nuggetts from
-            McDounlds. I hate their chicken tenders. I am Charlie Perkins.
-            <p>BIG MAC ATTACK!</p>
-        </h1>
-    </div>
-
-
-</body>
-=======
     <script>
         function wordsScreen() {
             var button = document.querySelector("#clickBtn");
@@ -125,38 +98,30 @@
                 header.innerText = "";
             });
         }
->>>>>>> 7e033a493712064765969c6ded57836633d76661
 
         function notTheDeathStar() {
             var pic = document.getElementById("the-destruction");
             pic.src = "images/index1.jpeg";
         }
 
-<<<<<<< HEAD
-    function notTheDeathStar() {
-        var pic = document.getElementById("the-destruction");
-        pic.src = "images/index1.jpeg";
-    }
+        function notTheDeathStar() {
+            var pic = document.getElementById("the-destruction");
+            pic.src = "images/index1.jpeg";
+        }
 
-    function timsFunction() {
-        var btn = document.querySelector("#timsBtn");
-        var p = document.querySelector("#timsPtag");
-        var text = document.querySelector("#timshTagOne");
-        var textTwo = document.querySelector("#timsHTagTwo")
-        btn.addEventListener("click", () => {
-            p.style.color = "red";
-            text.style.color = "green";
-            textTwo.style.color = "green"
-            p.style.fontSize = "3rem";
-        });
-    }
-    wordsScreen();
-    timsFunction()
-</script>
-
-</html>
-=======
+        function timsFunction() {
+            var btn = document.querySelector("#timsBtn");
+            var p = document.querySelector("#timsPtag");
+            var text = document.querySelector("#timshTagOne");
+            var textTwo = document.querySelector("#timsHTagTwo");
+            btn.addEventListener("click", () => {
+                p.style.color = "red";
+                text.style.color = "green";
+                textTwo.style.color = "green";
+                p.style.fontSize = "3rem";
+            });
+        }
         wordsScreen();
+        timsFunction();
     </script>
 </html>
->>>>>>> 7e033a493712064765969c6ded57836633d76661
