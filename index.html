@@ -26,19 +26,6 @@
         width: 121px;
         height: 100px;
     }
-
-    .word {
-        font-size: 24px;
-        font-weight: bolder;
-        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-            Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
-            sans-serif;
-    }
-
-    .food {
-        color: red;
-        background: navy;
-    }
 </style>
 
 <body>
@@ -84,6 +71,10 @@
             <p>BIG MAC ATTACK!</p>
         </h1>
     </div>
+    <div id="logan-ex">
+        <h2>Logan Harrel</h2>
+        <button class="random-button">Press Here!</button>
+    </div>
 </body>
 <script>
     function wordsScreen() {
@@ -106,10 +97,6 @@
         pic.src = "images/index1.jpeg";
     }
 
-    function notTheDeathStar() {
-        var pic = document.getElementById("the-destruction");
-        pic.src = "images/index1.jpeg";
-    }
 
     function timsFunction() {
         var btn = document.querySelector("#timsBtn");
@@ -123,8 +110,23 @@
             p.style.fontSize = "3rem";
         });
     }
+    var colors = ["green", "red", "black", "brown", "orange"];
+
+    function getColor(colors) {
+        var randomColor =
+            colors[Math.floor(Math.random() * colors.length)];
+        return randomColor;
+    }
+    var button = document.querySelector("button.random-button");
+    var page = document.querySelector("body");
+    button.addEventListener(
+        "click",
+        () => (page.style.backgroundColor = getColor(colors))
+        // window.open("https://www.google.com")
+    );
     wordsScreen();
     timsFunction();
+    getColor(colors)
 </script>
 
 </html>
